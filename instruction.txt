@@ -1,0 +1,38 @@
+//Watcheezy
+//Watcheezy.com
+//Developed by Ilyass Choulli
+
+
+Installation :
+
+Using a ftp client add those 3 files :
+/admin/includes/extra_datafiles/watcheezy_plugin_zencart.php
+/admin/includes/langauges/english/extra_definitions/watcheezy_plugin_zencart.php
+/admin/watcheezy_plugin_zencart.php
+
+Run the following code via Tools->Install SQL Patches:
+ INSERT INTO admin_pages (page_key, language_key, main_page, page_params, menu_key, display_on_menu, sort_order) VALUES ('watcheezyUNIQUEIDENTIFIER', 'BOX_watcheezy', 'FILENAME_watcheezy', '', 'tools', 'Y', 999);
+ 
+Go to your website Admin : /Tools/watcheezy
+
+Final Step :
+take the code after registration from your mailbox and past it here '/includes/templates/template_default/common/tpl_header.php' 
+*	
+ENJOY Now
+
+
+
+
+
+
+
+
+
+
+
+To uninstall  :
+
+ DELETE FROM admin_pages WHERE page_key = 'watcheezyUNIQUEIDENTIFIER';
+ and delete the 3 files .
+  
+  
